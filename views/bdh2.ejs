@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Birthday</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+         <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+:root{
+  --image: url("images/happy.jpeg");
+  --color: #000000;
+  --color2:rgb(113, 216, 245, 0.9); 
+}
+
+body {
+  background-color: var(--color);
+  text-align: center;
+}
+header {
+  text-align: center;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px 30px 30px 30px;
+  animation: 1s ease-out 0s 1 buttonPop;
+  background: var(--color2);
+  padding: 5px;
+  position: relative;
+  line-height: 0.75;
+}
+
+@keyframes buttonPop {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(2.0);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+#hpbd {
+  font-family: 'Dancing Script', cursive;
+  font-size: 10vw;
+  margin: 0.75em 0.75em 0.75em 0.75em;
+}
+
+#background {
+  background-image: var(--image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height:55vh;
+  width: 90vw;
+  z-index: -2;
+  position: absolute;
+  object-fit: contain;
+  margin-top: 0;
+  margin: 3vh 0vw 0vh 0.25vw;
+  border: 10px solid;
+  border-radius: 20px 20px 20px 20px;
+}
+#button {
+    height: 5vh;
+    width: 52vw;
+    position: relative;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    border: 2px snow;
+    box-shadow: 0px 5px 10px;
+    animation: rainbow 1s infinite;
+    top: 0;
+    margin: 0 -5px;
+    display: inline-block;
+    z-index: 2;
+}
+
+
+#buttontext{
+  font-family: 'Fredoka One', cursive;
+  font-size: 4vw; 
+  vertical-align: center;
+  position: static;
+}
+
+@keyframes rainbow {
+  0%{
+    background: radial-gradient(white,#f571bc);
+  } 25% {
+    background: radial-gradient(white,#af64fa);
+  } 50% {
+    background: radial-gradient(white,#8064fa);
+  } 75% {
+    background: radial-gradient(white,#648efa);
+  } 100% {
+    background: radial-gradient(white,#f571bc);
+  }
+}
+
+.button { transition: all .5s ease-in-out; }
+.button:hover { transform: scale(1.5); }
+
+
+iframe {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.b{
+  background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: -1px 68px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 35px;
+transform: translate(10px, 403px);
+}
+
+
+
+/* Marquee styling and options. borrowed from w3schools*/
+/*   Uncomment to use marquee!!!
+.marquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: var(--color);
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px; 
+  color: -webkit-linear-gradient(#eee, #333);
+}
+        
+.marquee p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  -moz-animation: bouncing-text 5s linear infinite alternate;
+  -webkit-animation: bouncing-text 5s linear infinite alternate;
+  animation: bouncing-text 10s linear infinite alternate;
+}
+
+@-moz-keyframes bouncing-text {
+  0% {
+    -moz-transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes bouncing-text {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+@keyframes bouncing-text {
+  0% {
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+*/
+
+
+    </style>
+    </head>
+    <body>
+  
+
+<header>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
+<!-- Uncomment to use Marquee!  <div class="marquee" id="marquee"><p>Happy Birthday!</p></div> -->
+   <p class="pop_text" id="hpbd">Happy            Birthday!</p>
+  
+  <button class="button" id="button">
+    
+    <div class="text" id="buttontext">click me </div>
+    
+  </button>
+  
+</header>
+
+<div class="background" id="background">
+  
+
+</div>
+<a href="book" class="b">Next</a>
+
+
+  
+
+<!-- <iframe id="birthdaySong" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/117637047&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" alt="birthday song"></iframe> -->
+
+
+
+       <script>
+         /*TO-DO: Make off button for sound 
+*/
+
+var button = document.getElementById("button");
+var buttonText = document.getElementById("buttontext");
+var c = document.querySelector('#button');
+let root = document.documentElement;
+
+/* Phrase Changer Code */
+/* You can edit the phrases and images here. Customize it!*/
+
+button.onclick = (function(){
+  
+  var phrases = ["THE ARTIST"," THE CHEF", " Hwww am soo cuute",  "yes TEA + MOMO = love", "Banarasiya", "NIBBI LITE" ];
+  
+  var bImages = [
+  
+        
+        "images/artist.jpeg",
+        "images/food.jpeg",
+  "images/cute.jpeg",
+        
+        
+        "images/tea.jpeg",
+        "images/banaras.jpeg",
+        "images/nibbi.jpeg"
+        
+  ];
+  
+  var count = 0;
+  var imageCount= 0;
+  return function(){
+  root.style.setProperty('--image', "url(" + bImages[++count % phrases.length] + ")");
+  buttonText.textContent = phrases[++imageCount % phrases.length];
+  };
+}());
+
+
+/* if(count>7){
+  do: release balloons/confetti/or something cool;
+}
+*/
+       </script>
+    </body>
+</html>
