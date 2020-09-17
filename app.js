@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs= require("ejs");
+const port = process.env.PORT || 3000
 
 const app=express();
 app.set('view engine', 'ejs');
@@ -34,6 +35,6 @@ app.post('/',function(req,res){
     }
 })
 
-app.listen(3000,function(){
-    console.log("server is running");
+app.listen(port,function(){
+    console.log("server is running"+ port);
 })
